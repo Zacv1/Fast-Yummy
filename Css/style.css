@@ -1,0 +1,273 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+
+:root {
+    --navbar-height: 60px;
+}
+
+/* Navigation bar */
+
+#navbar {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    position: relative;
+    /* flex-direction: column; */
+}
+
+/* Navigation bar: Logo and Image */
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 59px;
+    margin: 3px 6px;
+}
+
+/* Navigation bar: List styling */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhau', cursive;
+    /* font-family: 'Calistoga', cursive;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Libre Caslon Text', serif; */
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(107, 60, 60);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li {
+    /* color: ; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.login{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    color: white;
+}
+
+.navbar>div>h3{
+    padding-inline: 10px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: url('../bg1.jpg') no-repeat center center/cover;
+}
+
+#home::before {
+    content: "";
+    
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'EB Garamond', serif;
+}
+/* Services Section  */
+
+.services-container{
+    
+}
+
+.services{
+    margin: 34px;
+    display: flex;
+}
+
+.services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: rgb(217, 211, 213);
+}
+
+.services .box img{
+    height: 100px;
+    margin: auto;
+    padding: 2%;
+    display: block;
+}
+#services .box p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+#services{}
+#services{}
+#services{}
+/* Client section */
+
+#client-section{
+    height: 344;
+    /* position: relative; */
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    /* background-color: rgb(93, 181, 181); */
+    background: url('../bg2.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%;
+    height: 40%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 20px;
+}
+
+#clients img{
+    height: 120px;
+}
+
+/* utility classes */
+
+.h-primary {
+    font-size: 3.0rem;
+    padding: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.h-secondary {
+    font-size: 2.2rem;
+    padding: 12px;
+    font-family: 'EB Garamond', serif;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 18px;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+#contact{
+    background-color: rgb(53, 10, 10);
+    color: white;
+    height: 400px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+#contact-box>*{
+    padding: 20px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons>a{
+    padding: 20px;
+    /* height: 40px; */
+}
+
+#cc{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+.About{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 60px;
+    padding-inline: 80px;
+}
+
+.About-us>div>img{
+    border-radius: 10px;
+    box-shadow: 2px 6px 10px grey;
+    
+}
+
+.aboutp{
+    width:400px
+}
